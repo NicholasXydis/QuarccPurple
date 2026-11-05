@@ -20,7 +20,7 @@ AI is starting to move markets, and machines tend to think alike. QUARCC Purple 
 Less return than the market, with a fraction of the risk. Backtest, January 2021 to August 2026, after all costs.
 
 | | QUARCC Purple | S&P 500 |
-|---|---|---|
+| --- | --- | --- |
 | Max drawdown | −2.99% | −25.4% |
 | Volatility | 3.96% | 15.1% |
 | Beta to the S&P 500 | 0.012 | 1.00 |
@@ -41,7 +41,7 @@ Every month a machine-learning model scores every US stock on about 150 signals.
 All eight run on a local model on our own machines and never place a trade. Their records are in [finals/ai/](finals/ai/).
 
 | Agent | What it does |
-|---|---|
+| --- | --- |
 | Rules reader | Reads the competition rules and checks them against the fund's limits |
 | Triage | Sorts our companies' news filings into good, bad or neutral |
 | Analyst | Reads the latest reports of our ten biggest longs and shorts |
@@ -56,7 +56,7 @@ All eight run on a local model on our own machines and never place a trade. Thei
 Install [uv](https://docs.astral.sh/uv/) once. These need no data.
 
 | To | Run |
-|---|---|
+| --- | --- |
 | Check every rule on every day and recompute the headline from the locked results | `uv run run.py` |
 | Run the tests | `uv run pytest` |
 | Rebuild the deck, byte for byte | `uv run tools/deck/build.py` |
@@ -64,7 +64,7 @@ Install [uv](https://docs.astral.sh/uv/) once. These need no data.
 The fund itself reads licensed data from WRDS and the organisers that cannot be shared. With that data in place, these rebuild everything.
 
 | To | Run |
-|---|---|
+| --- | --- |
 | Prove the code, inputs and 659 outputs match the lock | `uv run fiam verify` |
 | Rebuild the whole fund from the raw data, then compare | `uv run fiam rerun` then `uv run fiam compare` |
 | Rebuild the website's numbers | `uv run python -m tools.pack` then `uv run python tools/build_site.py` |
@@ -75,7 +75,7 @@ A rerun on an Apple Silicon Mac matches the lock byte for byte. The deck build n
 ## What is where
 
 | Folder | Holds |
-|---|---|
+| --- | --- |
 | `finals/` | The fund facts, the deck, every figure they show and the AI agents' records |
 | `fiam/` | The fund in `fiam/vfinal/`, the AI agents in `fiam/agents/` and the shared stock and file helpers |
 | `frozen/` | The lock and the fund's locked results, the mandate templates and the agents' frozen inputs |
@@ -87,7 +87,7 @@ A rerun on an Apple Silicon Mac matches the lock byte for byte. The deck build n
 ## Team
 
 | Name | Role | Studies | Links |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Nicholas Xydis | AI & Research | Concordia, Computer Science | [LinkedIn](https://www.linkedin.com/in/nicholasxydis/) · [GitHub](https://github.com/NicholasXydis) |
 | Yohannah Ilieva | Risk Management | Concordia, Mathematical & Computational Finance | [LinkedIn](https://www.linkedin.com/in/yohannahilieva/) |
 | Andrew Koumoudjian | Portfolio Construction | Concordia, Finance | [LinkedIn](https://www.linkedin.com/in/andrewkoumoudjian/) |
