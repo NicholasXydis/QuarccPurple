@@ -3,7 +3,7 @@
 
 ### A market-neutral fund that stays level when AI moves the market
 
-Finalist · McGill-FIAM Asset Management Hackathon 2026
+Finalist · McGill-FIAM Asset Management Hackathon 2026 
 
 <a href="https://quarccpurple.ca"><img src="site/docs/site-btn.svg" alt="Visit quarccpurple.ca" width="560"></a>
 
