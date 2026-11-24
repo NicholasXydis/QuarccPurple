@@ -96,6 +96,6 @@ A rerun on an Apple Silicon Mac matches the lock byte for byte. The deck build n
 
 ## Credits and license
 
-**Data** · FRED, the Kenneth French library, Arcana and Carbon Arc (totals only). The S&P 500 series belongs to S&P Dow Jones Indices.
+**Data** ·FRED, the Kenneth French library, Arcana and Carbon Arc (totals only). The S&P 500 series belongs to S&P Dow Jones Indices.
 
 **License** · The code is under the [MIT License](LICENSE). The data files keep their own terms.
